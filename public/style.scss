@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap');
+
+body, html{
+    background: #ffffff;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header{
+    margin-top: 20px;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background: #F74D55;
+
+    .menu{
+        i{
+            margin: 15px;
+            color: #FFFFFF;
+            cursor: pointer;
+        }
+    }
+}
+
+.sidebar{
+    background: #D5474D;
+    width: 60%;
+    height: 95%;
+    transform: translate(-600px, 0px);
+    z-index: 9999;
+    position: absolute;
+    transition:  all 500ms;
+
+    ul{
+        li{
+            list-style: none;
+            margin: 25px 0;
+
+            a{
+                text-decoration: none;
+                color: #FFFFFF;
+                transition:  all 500ms;
+
+                &:hover{
+                    padding-left: 15px;
+                }
+            }
+        }
+    }
+    
+}
+
+.open{
+    background: #D5474D;
+    width: 60%;
+    height: 95%;
+    z-index: 9999;
+    transform: translate(0px, 0px);
+    position: absolute;
+    transition:  all 500ms;
+}
+
+.one {
+    display: flex;
+
+    .button {
+        line-height: 75px;
+        height: 150px;
+        box-shadow: 0px 8px 1px #9e1510;
+        background-image: linear-gradient(to left, #D5474D, #F74D55);
+        text-align: center;
+        border-radius: 0.25em;
+        width: 100%;
+        font-size: 1.2rem;
+        text-shadow: 1px 1px 3px #444;
+        margin: 0 3px 10px 0;
+        cursor: pointer;
+        transition: all 0.1s;
+        border: 1px solid #fa6d6d;
+        font-weight: 700;
+        color: #FFFFFF;
+
+        &:active {
+            box-shadow: 0px 2px 0px #222222;
+            box-shadow: none;
+            position: relative;
+            top: 4px;
+        }
+    }
+}
+
+.icon-1, .icon-2, .icon-3, .icon-4, .icon-5, .icon-6 {
+    margin: 10px auto 0;
+}
+
+.icon-1{
+    background: url(./svg/001-blood-donation.svg);
+    width: 35%;
+    background-position: center;
+    background-size: contain;
+    height: 80px;
+    background-repeat: no-repeat;
+}
+
+.icon-2{
+    background: url(./svg/007-patient.svg);
+    width: 35%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 80px;
+}
+
+.icon-3{
+    background: url(./svg/pin.svg);
+    width: 35%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 80px;
+}
+
+.icon-4{
+    background: url(./svg/006-blood-donation-2.svg);
+    width: 35%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 80px;
+}
+
+.icon-5{
+    background: url(./svg/009-blood-test.svg);
+    width: 35%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 80px;
+}
+
+.icon-6{
+    background: url(./svg/book.svg);
+    width: 35%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 80px;
+}
+
+// last donors css
+.blood{
+    color: #ff4f4f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; 
+}
+
+.blood::before{
+
+    content: "";
+    background: #cccccc;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-top-right-radius: 0;
+    transform: rotate(-45deg);
+    position: absolute;
+    z-index: -1;
+}
+
+.form-group{
+    transition:  all 300ms;
+    border-radius: 0.25em;
+    padding: 8px;
+    background-color: #f5f6fa;
+    margin-top: 15px; 
+
+    h3{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+}
+
+.hide{
+   
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    margin-top: -70px;
+    
+}
+
+.bts-site{
+    margin: 8px 0 0 0;
+}
+
+.btn-site {
+    background: #cccccc;
+    border: none;
+    align-items: center;
+    height: 80px;
+    justify-content: end;
+    display: flex;
+    color: #222222;
+    font-size: 2rem;
+}
+
+.btn-site i {
+    font-size: 2rem;
+    margin: 0 20px 0 40px;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #9e1510;
+    border-color: #dc3545;
+    box-shadow: 0 4px 0 #570603;
+    text-shadow: 1px 1px 3px #444;
+    font-weight: 700;
+}
+
+
+
